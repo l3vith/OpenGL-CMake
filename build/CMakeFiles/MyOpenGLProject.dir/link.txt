@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/MyOpenGLProject.dir/src/main.cpp.o CMakeFiles/MyOpenGLProject.dir/lib/glad.c.o -o MyOpenGLProject  libglad.a /usr/lib/libGL.so /usr/lib/libGLU.so _deps/glfw-build/src/libglfw3.a /usr/lib/librt.a -lm -ldl /usr/lib/libX11.so
