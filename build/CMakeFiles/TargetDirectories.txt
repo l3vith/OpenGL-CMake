@@ -1,4 +1,4 @@
-/home/smit/Documents/code/cpp/OpenGL/glmake/build/CMakeFiles/MyOpenGLProject.dir
+/home/smit/Documents/code/cpp/OpenGL/glmake/build/CMakeFiles/glmake.dir
 /home/smit/Documents/code/cpp/OpenGL/glmake/build/CMakeFiles/glad.dir
 /home/smit/Documents/code/cpp/OpenGL/glmake/build/CMakeFiles/edit_cache.dir
 /home/smit/Documents/code/cpp/OpenGL/glmake/build/CMakeFiles/rebuild_cache.dir

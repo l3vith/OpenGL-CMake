@@ -25,7 +25,7 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(glfw)
 
 # Add executable for your project
-add_executable(MyOpenGLProject ${SOURCES})
+add_executable(glmake ${SOURCES})
 
 # Add glad as a library
 add_library(glad STATIC lib/glad.c)   # Ensure glad.c is in the lib/ folder
@@ -37,7 +37,7 @@ target_include_directories(glad PUBLIC include)  # Include path for glad.h
 #find_package(GLFW3 REQUIRED)
 
 # Link libraries to your executable
-target_link_libraries(MyOpenGLProject
+target_link_libraries(glmake
     glad
     ${OPENGL_LIBRARIES}
     glfw

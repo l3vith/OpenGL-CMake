@@ -162,17 +162,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MyOpenGLProject
+# Target rules for targets named glmake
 
 # Build rule for target.
-MyOpenGLProject: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyOpenGLProject
-.PHONY : MyOpenGLProject
+glmake: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glmake
+.PHONY : glmake
 
 # fast build rule for target.
-MyOpenGLProject/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyOpenGLProject.dir/build.make CMakeFiles/MyOpenGLProject.dir/build
-.PHONY : MyOpenGLProject/fast
+glmake/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glmake.dir/build.make CMakeFiles/glmake.dir/build
+.PHONY : glmake/fast
 
 #=============================================================================
 # Target rules for targets named glad
@@ -595,7 +595,7 @@ lib/glad.o: lib/glad.c.o
 
 # target to build an object file
 lib/glad.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyOpenGLProject.dir/build.make CMakeFiles/MyOpenGLProject.dir/lib/glad.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glmake.dir/build.make CMakeFiles/glmake.dir/lib/glad.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/lib/glad.c.o
 .PHONY : lib/glad.c.o
 
@@ -604,7 +604,7 @@ lib/glad.i: lib/glad.c.i
 
 # target to preprocess a source file
 lib/glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyOpenGLProject.dir/build.make CMakeFiles/MyOpenGLProject.dir/lib/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glmake.dir/build.make CMakeFiles/glmake.dir/lib/glad.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/lib/glad.c.i
 .PHONY : lib/glad.c.i
 
@@ -613,7 +613,7 @@ lib/glad.s: lib/glad.c.s
 
 # target to generate assembly for a file
 lib/glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyOpenGLProject.dir/build.make CMakeFiles/MyOpenGLProject.dir/lib/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glmake.dir/build.make CMakeFiles/glmake.dir/lib/glad.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/lib/glad.c.s
 .PHONY : lib/glad.c.s
 
@@ -622,7 +622,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyOpenGLProject.dir/build.make CMakeFiles/MyOpenGLProject.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glmake.dir/build.make CMakeFiles/glmake.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -630,7 +630,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyOpenGLProject.dir/build.make CMakeFiles/MyOpenGLProject.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glmake.dir/build.make CMakeFiles/glmake.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -638,7 +638,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyOpenGLProject.dir/build.make CMakeFiles/MyOpenGLProject.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glmake.dir/build.make CMakeFiles/glmake.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -654,7 +654,6 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... uninstall"
-	@echo "... MyOpenGLProject"
 	@echo "... boing"
 	@echo "... clipboard"
 	@echo "... cursor"
@@ -665,6 +664,7 @@ help:
 	@echo "... glad"
 	@echo "... glfw"
 	@echo "... glfwinfo"
+	@echo "... glmake"
 	@echo "... heightmap"
 	@echo "... icon"
 	@echo "... iconify"
